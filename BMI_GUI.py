@@ -80,7 +80,7 @@ def calculate_bmi():
             bmi_category = "Obese"
 
         # Display BMI result
-        bmi_label = Label(user_data_frame, text=f"Your BMI is {bmi:.2f}, and you are {bmi_category}")
+        bmi_label = Label(user_data_frame, text=f"{First_name_entry} {Last_name_entry} BMI is {bmi:.2f}, and you are {bmi_category}")
         bmi_label.grid(row=3, column=0, columnspan=4, sticky="ew", padx=5, pady=5)  # Place the result label in the grid
     except ValueError:
         # Handle invalid input
