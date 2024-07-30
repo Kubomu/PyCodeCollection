@@ -65,6 +65,8 @@ def calculate_bmi():
         weight = float(weight_entry.get())
         height = float(height_entry.get())
         age = int(age_entry.get())
+        first_name = first_name_entry.get()
+        last_name = last_name_entry.get()
 
         # Calculate BMI
         bmi = weight / (height ** 2)
@@ -80,7 +82,7 @@ def calculate_bmi():
             bmi_category = "Obese"
 
         # Display BMI result
-        bmi_label = Label(user_data_frame, text=f"{First_name_entry} {Last_name_entry} BMI is {bmi:.2f}, and you are {bmi_category}")
+        bmi_label = Label(user_data_frame, text=f"{first_name} {last_name}, your BMI is {bmi:.2f}, and you are {bmi_category}")
         bmi_label.grid(row=3, column=0, columnspan=4, sticky="ew", padx=5, pady=5)  # Place the result label in the grid
     except ValueError:
         # Handle invalid input
@@ -88,8 +90,8 @@ def calculate_bmi():
         bmi_label.grid(row=3, column=0, columnspan=4, sticky="ew", padx=5, pady=5)  # Place the error label in the grid
 
 # Create a button to trigger BMI calculation
-button = Button(window, text="Calculate", command=calculate_bmi)
-button.grid(row=2, column=0, sticky="ew", padx=10, pady=10)  # Pack the button into the window
+button = Button(frame, text="Calculate", command=calculate_bmi)
+button.grid(row=1, column=0, sticky="ew", padx=10, pady=10)  # Pack the button into the frame
 
 # Start the Tkinter event loop
 window.mainloop()
