@@ -12,7 +12,7 @@ class CountdownTimer:
         self.root.geometry("600x600")
 
         # Load and set the background image
-        self.background_image = Image.open("crested_crane.png")  # Ensure this file is in the same directory
+        self.background_image = Image.open("./Tkinter/Happy Independence Day Uganda/crested_crane.png")  # Ensure this file is in the same directory
         self.background_image = self.background_image.resize((600, 600), Image.LANCZOS)  # Resize if needed
         self.bg_image = ImageTk.PhotoImage(self.background_image)
 
