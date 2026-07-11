@@ -1,0 +1,16 @@
+# Third-party libraries used by the scripts in this collection.
+# Install everything at once with:
+#     pip install -r requirements.txt
+#
+# tkinter and turtle come with Python already, so they are not listed here.
+
+pillow          # PIL, used by Image_captcha, QRcodegeneration, RemoveImageBG, Uganda
+captcha         # Image_captcha
+colorama        # Printing_Coloured_Output
+matplotlib      # PieChart and Image_captcha
+periodictable   # periodic_table_elements
+psutil          # ListingRunningProcesses
+pygame          # Pygame/BouncingBall
+qrcode          # QRcodegeneration
+rembg           # RemoveImageBG (large download, also pulls in onnxruntime)
+yt-dlp          # YoutubeDownloader
