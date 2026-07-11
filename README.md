@@ -1,62 +1,84 @@
 # PyCodeCollection
 
-Welcome to PyCodeCollection, a comprehensive repository dedicated to Python programming projects and scripts. This collection showcases a variety of Python code snippets, projects, and experiments ranging from beginner to advanced levels. Whether you're looking to learn new Python concepts, explore interesting projects, or contribute to open-source code, PyCodeCollection is the perfect place to start.
+A collection of small Python programs I wrote while learning to code at university.
 
-## Features
+I started this in 2024, during my first year with Python, and I keep it here as a snapshot of where I began: a mix of little games, desktop apps, and handy tools I built just to figure out how things worked. Some are polished, some are rough, and that is exactly the point. If you are also starting out, feel free to clone it, run things, and take them apart.
 
-- Diverse Python scripts and projects
-- Examples covering various Python libraries and frameworks
-- Well-documented code with clear explanations
-- Continuous updates with new and exciting projects
-- Contributions welcome from the Python community
+## What is inside
 
-## Table of Contents
+### Games and puzzles
+- `GuessGame.py` - guess the secret number
+- `RockPaperScissor.py` - rock, paper, scissors against the computer
+- `Formula_One_Quiz.py` - a Formula One trivia quiz
+- `MAZE.py` - a maze
+- `RPG.py` - a small text role-playing game
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+### Desktop apps (Tkinter)
+- `Tkinter/BMI_GUI.py` - a body mass index calculator with a window
+- `Tkinter/LoanCalculator.py` - work out loan repayments
+- `Tkinter/PyCalender.py` - a simple calendar
+- `Tkinter/FidgetSpinner.py` - an animated fidget spinner
+- `Tkinter/OlympicSymbol.py` - draws the Olympic rings
+- `Tkinter/Happy Independence Day Uganda/Uganda.py` - an Independence Day tribute with artwork
 
-## Installation
+### Graphics and animation
+- `Pygame/BouncingBall.py` - a ball bouncing around the screen with Pygame
 
-To get started with PyCodeCollection, clone the repository to your local machine:
+### Handy tools
+- `YoutubeDownloader.py` - download a video with yt-dlp
+- `QRcodegeneration.py` - turn text or a link into a QR code
+- `RemoveImageBG.py` - strip the background out of an image
+- `Image_captcha.py` - generate a captcha image
+- `Password.py` - generate and check passwords
+- `ListingRunningProcesses.py` - list the processes running on your machine
+- `ValidateVoters.py` - a small voter validation exercise
+- `conversion.py` - convert between common units
 
-bash
-git clone https://github.com/Kubomu/PyCodeCollection.git
-cd PyCodeCollection
+### Learning exercises
+- `Day_of_the_week.py` - find the weekday for any date
+- `DeterminingLeapYear.py` - check whether a year is a leap year
+- `periodic_table_elements.py` - look up elements in the periodic table
+- `PieChart.py` - draw a pie chart with matplotlib
+- `Printing_Coloured_Output.py` - print coloured text in the terminal
 
+## Running the scripts
 
-Make sure you have Python installed. You can download it from [python.org](https://www.python.org/).
+1. Make sure you have Python installed. You can download it from [python.org](https://www.python.org/).
 
-## Usage
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/Kubomu/PyCodeCollection.git
+   cd PyCodeCollection
+   ```
 
-Each project or script is contained within its own directory. To run a specific project, navigate to its directory and follow the instructions provided in its README file (if available).
+3. Install the libraries the scripts use:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   The plain exercises and games need nothing extra, so you can also install a single library only when a script asks for it.
 
-bash
-cd project_directory
-python script.py
+4. Run any script by name:
+   ```bash
+   python GuessGame.py
+   ```
+   Scripts inside a folder are run with their path, for example:
+   ```bash
+   python "Tkinter/BMI_GUI.py"
+   ```
 
-## Contributing
-
-We welcome contributions to PyCodeCollection! To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch-name`.
-3. Make your changes and commit them: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature-branch-name`.
-5. Create a pull request.
-
-Please make sure your code is well-documented and adheres to the existing coding style.
+A few notes:
+- The Tkinter and Pygame scripts open their own window, so run them on a computer with a screen rather than a headless server.
+- `tkinter` and `turtle` are part of Python already and do not need installing.
+- A couple of the tools depend on the outside world and may need a refresh over time. The YouTube downloader in particular can break when the site changes, and the background remover downloads a model the first time you run it.
 
 ## License
 
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any questions, suggestions, or feedback, please feel free to contact me at [kubomuedwin@gmail.com](mailto:kubomuedwin@gmail.com).
+Questions or suggestions are welcome at [kubomuedwin@gmail.com](mailto:kubomuedwin@gmail.com).
 
 ---
 
-Happy coding!
+Happy coding, and here is to the next two years.
